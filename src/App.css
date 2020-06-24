@@ -87,7 +87,7 @@
 @media (max-width: 375px) {
   .quotes-card button {
     position: fixed;
-    top: 35em;
+    top: 40em;
     left: 25em;
   }
   .quotes-card {
