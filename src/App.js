@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
+import quote from "./quote.png";
 import "./App.css";
 
 function App() {
@@ -31,11 +32,12 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
         ) : err ? null : (
           <div className="quotes-card">
-            <div>
+            <div className="quote">
+              <img src={quote} alt="quote" />
               <h2>{quotes.quote}</h2>
             </div>
             <div>
-              <p>{quotes.author}</p>
+              <h5>{quotes.author}</h5>
             </div>
             <button onClick={fetchQuotesApi}>New Quote</button>
           </div>

@@ -14,12 +14,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -40,12 +41,54 @@
 
 .quotes-card {
   width: 800px;
+  height: 350px;
   background-color: #900c3f;
   padding: 30px;
   border-radius: 30px;
+  font-size: 1em;
 }
 
-.quotes-card p {
+.quotes-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.quote {
+  display: flex;
   text-align: left;
-  margin-left: 30px;
+}
+
+.quote h2 {
+  font-size: 1.3em;
+}
+
+.quotes-card h5 {
+  text-align: left;
+  margin-left: 80px;
+
+}
+
+.quotes-card button {
+  position: fixed;
+  top: 35em;
+  left: 75em;
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  outline: none;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.quotes-card button:hover {
+  background-color: #900c3f;
+  border: 1px solid white;
+}
+
+@media (max-width: 500px) {
+  .quotes-card button {
+    position: fixed;
+    margin-top: 30em;
+    margin-left: 30em;
+  }
 }
