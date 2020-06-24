@@ -84,10 +84,10 @@
   border: 1px solid white;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .quotes-card button {
     position: fixed;
-    top: 40em;
+    top: 35em;
     left: 25em;
   }
   .quotes-card {
